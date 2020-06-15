@@ -1,6 +1,8 @@
 from gpiozero import CPUTemperature
 from time import sleep, strftime, time
 
+cpu = CPUTemperature()
+
 while True:
     temp = cpu.temperature
 
