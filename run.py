@@ -1,5 +1,8 @@
-from gpiozero import CPUTemperature
+from gpiozero.pins.mock import MockFactory
+from gpiozero import Device, CPUTemperature
 from time import sleep, strftime, time
+
+Device.pin_factory = MockFactory()
 
 cpu = CPUTemperature()
 

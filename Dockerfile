@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY run.py ./
 
-RUN pip install 'gpiozero==1.5.1'
+RUN pip3 install gpiozero
 
 CMD [ "python3", "./run.py" ]
